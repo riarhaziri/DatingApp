@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'Dating app!';
+  title = 'Dating App!';
   users: any;
 
   constructor(private http: HttpClient)
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit{
       {
         next: response => this.users = response,
         error: error => console.log(error),
-        complete: () => console.log('Request gas completed')
+        complete: () => console.log('Request has completed')
         
       }
     )
